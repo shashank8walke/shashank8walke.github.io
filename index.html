@@ -4,113 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shashank Ajit Walke - Profile</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1, h2 {
-            color: #0056b3;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.5em;
-        }
-        h2 {
-            font-size: 1.8em;
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        ul {
-            list-style-type: square;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .contact-info {
-            font-style: italic;
-            margin-bottom: 1em;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <h1>Shashank Ajit Walke</h1>
-        <p class="contact-info">
-            <a href="tel:+19843791551">+1 984-379-1551</a> |
-            <a href="mailto:swalke@ncsu.edu">swalke@ncsu.edu</a> |
-            <a href="https://www.linkedin.com/in/shashank-walke-728536191" target="_blank">LinkedIn</a> |
-            Raleigh, NC
-        </p>
+        <div class="contact-info">
+            <a href="tel:+19843791551"><i class="fas fa-phone"></i> +1 984-379-1551</a>
+            <a href="mailto:swalke@ncsu.edu"><i class="fas fa-envelope"></i> swalke@ncsu.edu</a>
+            <a href="https://www.linkedin.com/in/shashank-walke-728536191" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://shashank8walke.github.io/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
+            <span><i class="fas fa-map-marker-alt"></i> Raleigh, NC</span>
+        </div>
     </header>
 
     <section id="education">
         <h2>Education</h2>
-        <h3>North Carolina State University</h3>
-        <p><strong>Master's in Computer Science</strong> | August 2024 - May 2026</p>
-        <p>GPA: 4.0 / 4.0</p>
-        <p>Relevant Courses: Neural Networks, Automated Learning, Data Analysis, Database Systems Management, Advanced Robotics, Artificial Intelligence, Design and Analysis of Algorithms, Data Visualization</p>
+        <div class="education-item">
+            <h3>North Carolina State University</h3>
+            <p class="date">August 2024 - May 2026</p>
+            <p><strong>Master's in Computer Science</strong> | GPA: 4.0 / 4.0</p>
+            <p>Relevant Courses: Neural Networks, Automated Learning, Data Analysis, Database Systems Management, Advanced Robotics, Artificial Intelligence, Design and Analysis of Algorithms, Data Visualization</p>
+        </div>
 
-        <h3>Walchand College of Engineering</h3>
-        <p><strong>BTech in Information Technology</strong> | July 2017 - May 2021</p>
-        <p>CGPA: 9.19 / 10 | Grade A+</p>
+        <div class="education-item">
+            <h3>Walchand College of Engineering</h3>
+            <p class="date">July 2017 - May 2021</p>
+            <p><strong>BTech in Information Technology</strong> | CGPA: 9.19 / 10 | Grade A+</p>
+        </div>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, Java, Javascript, C++, R, Shell Scripting, Perl</li>
-            <li><strong>ML/AI:</strong> Tensorflow, Pytorch, Scikit-learn, Numpy, Pandas, Matplotlib, OpenCV</li>
-            <li><strong>Web Development:</strong> Angular, React, HTML, CSS, NodeJS</li>
-            <li><strong>Databases:</strong> SQL, MongoDB</li>
-            <li><strong>Cloud/DevOps:</strong> AWS, Git, Docker, Linux, Microservices, Rest APIs, Jenkins</li>
-            <li><strong>Other:</strong> OOPs, Tableau, Jupyter</li>
-        </ul>
+        <div class="skills-grid">
+            <div>
+                <h3>Languages</h3>
+                <ul>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>Javascript</li>
+                    <li>C++</li>
+                    <li>R</li>
+                    <li>Shell Scripting</li>
+                    <li>Perl</li>
+                </ul>
+            </div>
+            <div>
+                <h3>ML/AI</h3>
+                <ul>
+                    <li>Tensorflow</li>
+                    <li>Pytorch</li>
+                    <li>Scikit-learn</li>
+                    <li>Numpy</li>
+                    <li>Pandas</li>
+                    <li>Matplotlib</li>
+                    <li>OpenCV</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Web Development</h3>
+                <ul>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>NodeJS</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Databases</h3>
+                <ul>
+                    <li>SQL</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Cloud/DevOps</h3>
+                <ul>
+                    <li>AWS</li>
+                    <li>Git</li>
+                    <li>Docker</li>
+                    <li>Linux</li>
+                    <li>Microservices</li>
+                    <li>REST APIs</li>
+                    <li>Jenkins</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Other</h3>
+                <ul>
+                    <li>OOPs</li>
+                    <li>Tableau</li>
+                    <li>Jupyter</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="experience">
         <h2>Work Experience</h2>
 
-        <h3>Veritas Technologies: Software Engineer - NetBackup Appliance Team (NBA)</h3>
-        <p>April 2023 - July 2024</p>
-        <ul>
-            <li>Led development of "Appliance Cloud Toolkit" using ML algorithms for NBA OS upgrades, increasing customer satisfaction by 25% through advanced analytics.</li>
-            <li>Optimized NBA patch upgrades using shadow partitioning, reducing upgrade time by 40% (180 to 110 mins).</li>
-            <li>Designed a disaster recovery solution for high-availability clusters to retain appliance configurations.</li>
-        </ul>
+        <div class="experience-item">
+            <h3>Veritas Technologies: Software Engineer - NetBackup Appliance Team (NBA)</h3>
+            <p class="date">April 2023 - July 2024</p>
+            <ul>
+                <li>Led development of "Appliance Cloud Toolkit" using ML algorithms for NBA OS upgrades. Implemented data-driven recommendations, predictive alerts, and one-click management on the System Health Insights platform, resulting in increased customer satisfaction by 25% through advanced analytics.</li>
+                <li>Optimized NBA patch upgrades using shadow partitioning, reducing upgrade time by 40% (180 to 110 mins).</li>
+                <li>Designed a disaster recovery solution for high-availability clusters to retain appliance configurations.</li>
+            </ul>
+        </div>
 
-        <h3>Veritas Technologies: Associate Software Engineer and Intern</h3>
-        <p>July 2021 - March 2023</p>
-        <ul>
-            <li>Developed HAMSA, a Vulnerability Tracking and Management Tool, saving 15% time during product pre-planning.</li>
-            <li>Collaborated on NBA patches, delivering 10% new features and 70+ security vulnerability fixes per quarter.</li>
-            <li>Integrated security engines for Antimalware feature, empowering users to detect and eliminate threats.</li>
-        </ul>
+        <div class="experience-item">
+            <h3>Veritas Technologies: Associate Software Engineer and Intern</h3>
+            <p class="date">July 2021 - March 2023</p>
+            <ul>
+                <li>Developed HAMSA, a Vulnerability Tracking and Management Tool by integrating RedHat APIs, Blackduck, and machine learning, for automated reports, insights and component analysis. Thus, adopted by 20+ internal teams saving 15% time during product pre-planning and release activities.</li>
+                <li>Collaborated with cross-functional teams for the development of 2 simultaneous NBA patches per quarter to deliver an average of 10% new features, 70+ security vulnerability fixes, and core escalations fixes.</li>
+                <li>Integrated security engines from leading Endpoint protection providers, creating an Antimalware feature that empowered users to detect, quarantine, and eliminate threats.</li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
         <h2>Projects</h2>
-        <h3>SightBuddy</h3>
-        <p>Won "Best Use of GenAI" at HackNCState-25.  AI-powered web assistant for visually impaired users.</p>
-
-        <h3>Multi-label Threat Classifier</h3>
-        <p>Improved accuracy from 75% to 78% by combining autoencoders and Random Forest.</p>
-
-        <h3>WolfLease</h3>
-        <p>Secure subleasing web app with personalized flat recommendations.</p>
-
-          <h3>Density based Traffic Management System</h3>
-        <p>using OpenCV and CNN with 92% accuracy</p>
+        <div class="project-item">
+            <h3>SightBuddy</h3>
+            <p>Won "Best Use of GenAI" award at HackNCState-25 hackathon by MLH. AI-powered web assistant leveraging NLP and Gemini for text summarization, voice-to-text conversion, and intelligent action execution, empowering visually impaired users to navigate and comprehend digital content.</p>
+        </div>
+        <div class="project-item">
+            <h3>Multi-label Threat Classifier</h3>
+            <p>Proposed a novel architecture combining autoencoder and random forest, improving accuracy from 75% to 78% by unsupervised feature learning and hyperparameter optimization.</p>
+        </div>
+        <div class="project-item">
+            <h3>WolfLease</h3>
+            <p>A secure subleasing web app featuring user authentication, digital lease signing, and personalized flat recommendations based on user profiles, preferences, and area-specific data analysis.</p>
+        </div>
+         <div class="project-item">
+            <h3>Density based Traffic Management System</h3>
+            <p>using OpenCV and CNN with 92% accuracy.</p>
+        </div>
     </section>
 
     <section id="certifications">
@@ -118,9 +151,8 @@
         <ul>
             <li>PluralSight: Fundamental Cloud Concepts for AWS, Introduction to Security and Architecture on AWS</li>
             <li>Veritas [2022-2024]: 2 Star of the Quarter Awards, 5 WoW Awards, Mention in company newsletter for innovation and major contributions in releases. Finalist in a hackathon for an event-based backup strategy.</li>
-             <li>Walchand College of Engineering [2018-2021]: Finalist (ACM hackathon for blockchain-based healthcare inventory management system), Winner (3 coding competitions with (500+) participants), Winner (Reverse coding competition, a state-level event at COEP Pune).</li>
+            <li>Walchand College of Engineering [2018-2021]: Finalist (ACM hackathon for blockchain-based healthcare inventory management system), Winner (3 coding competitions with (500+) participants), Winner (Reverse coding competition, a state-level event at COEP Pune).</li>
             <li>Mentor, Head of Public Relations(PR), and Event Lead [2018-2021] - Walchand Linux Users Group to organize and publicize technical events, workshops, and club activities with 2000+ participants.</li>
-
         </ul>
     </section>
 
@@ -128,5 +160,6 @@
         <p>&copy; 2025 Shashank Ajit Walke</p>
     </footer>
 
+    <script src="https://kit.fontawesome.com/yourfontawesomecode.js" crossorigin="anonymous"></script>
 </body>
 </html>
