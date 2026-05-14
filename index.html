@@ -1,165 +1,1030 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shashank Ajit Walke - Profile</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank Walke — AI/ML Engineer & Software Engineer</title>
+  <meta name="description" content="M.S. Computer Science student at NC State (4.0 GPA, Tau Beta Pi) with 3+ years of industry experience at Veritas & NetApp. Building production AI systems, LLM applications, and distributed software." />
+  <meta property="og:title"       content="Shashank Walke — AI/ML Engineer & Software Engineer" />
+  <meta property="og:description" content="2× MLH Hackathon Winner · 4.0 GPA at NCSU · Research submitted to ESA 2026 · Building where GenAI meets systems engineering." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://shashank8walke.github.io" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-    <header>
-        <h1>Shashank Ajit Walke</h1>
-        <div class="contact-info">
-            <a href="tel:+19843791551"><i class="fas fa-phone"></i> +1 984-379-1551</a>
-            <a href="mailto:swalke@ncsu.edu"><i class="fas fa-envelope"></i> swalke@ncsu.edu</a>
-            <a href="https://www.linkedin.com/in/shashank-walke-728536191" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://shashank8walke.github.io/" target="_blank"><i class="fas fa-globe"></i> Portfolio</a>
-            <span><i class="fas fa-map-marker-alt"></i> Raleigh, NC</span>
+<!-- ── Full-page constellation background ───────────────── -->
+<div id="particles-js"></div>
+
+<!-- ════════════════════════════════════════════════════════
+     NAVBAR
+═════════════════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">SW<span class="brand-dot">.</span></a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-1">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#tech-stack">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#awards">Awards</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-2">
+          <a class="btn btn-primary btn-sm px-3" href="assets/files/resume.pdf" download>
+            <i class="fas fa-download me-1"></i>Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════════════════════════
+     HERO
+═════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-content">
+    <h1 class="hero-name" data-aos="fade-down">Shashank Walke</h1>
+
+    <p class="hero-role" data-aos="fade-up" data-aos-delay="100">
+      <span id="typed-output"></span>
+    </p>
+
+    <p class="hero-tagline" data-aos="fade-up" data-aos-delay="200">
+      From LLM-powered applications and RAG pipelines to distributed C++ infrastructure —
+      building where AI precision meets engineering rigor.
+    </p>
+
+    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+      <a href="#projects" class="btn btn-primary px-4 py-2">View My Work →</a>
+      <a href="https://www.linkedin.com/in/shashank8walke/" class="btn btn-outline-light px-4 py-2" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin me-2"></i>LinkedIn
+      </a>
+      <a href="assets/files/resume.pdf" class="btn btn-outline-light px-4 py-2" download>
+        <i class="fas fa-download me-2"></i>Resume
+      </a>
+    </div>
+
+    <div class="hero-badges" data-aos="fade-up" data-aos-delay="400">
+      <div class="hero-badge" title="GenAI &amp; LLMs"><i class="fas fa-brain"></i></div>
+      <div class="hero-badge" title="Systems Engineering"><i class="fas fa-microchip"></i></div>
+      <div class="hero-badge" title="ML Research"><i class="fas fa-flask"></i></div>
+      <div class="hero-badge" title="Distributed Systems"><i class="fas fa-network-wired"></i></div>
+      <div class="hero-badge" title="Full-Stack Dev"><i class="fas fa-code"></i></div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span></span>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     ABOUT
+═════════════════════════════════════════════════════════ -->
+<section id="about" class="section-padding">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <!-- Photo -->
+      <div class="col-md-4 text-center" data-aos="fade-right">
+        <div class="about-photo-frame">
+          <!-- Replace the div below with an <img> once profile photo is converted to JPG:
+               <img src="assets/images/profile/profile.jpg" alt="Shashank Walke" class="about-photo-circle"> -->
+          <div class="about-photo-initials">SW</div>
         </div>
-    </header>
+      </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>North Carolina State University</h3>
-            <p class="date">August 2024 - May 2026</p>
-            <p><strong>Master's in Computer Science</strong> | GPA: 4.0 / 4.0</p>
-            <p>Relevant Courses: Neural Networks, Automated Learning, Data Analysis, Database Systems Management, Advanced Robotics, Artificial Intelligence, Design and Analysis of Algorithms, Data Visualization</p>
+      <!-- Bio -->
+      <div class="col-md-8" data-aos="fade-left">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-heading">Researcher. Builder. Engineer.</h2>
+        <p class="about-text">
+          M.S. Computer Science student at NC State (4.0 GPA, Tau Beta Pi Honor Society) and former Software
+          Engineer at Veritas Technologies and AI/ML Intern at NetApp, with 3+ years building production
+          systems across the full stack. I work at the intersection of GenAI and distributed systems —
+          shipping LLM-powered applications, RAG pipelines, and high-performance C++ infrastructure.
+          Back-to-back MLH hackathon wins and ongoing thesis research submitted to the European Symposium
+          on Algorithms 2026 reflect a commitment to both real-world impact and academic rigor.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-item">
+            <span class="stat-number">4.0</span>
+            <span class="stat-label">M.S. GPA @ NCSU</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Industry</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">2×</span>
+            <span class="stat-label">MLH Winner</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">ESA'26</span>
+            <span class="stat-label">Research Submitted</span>
+          </div>
         </div>
 
-        <div class="education-item">
-            <h3>Walchand College of Engineering</h3>
-            <p class="date">July 2017 - May 2021</p>
-            <p><strong>BTech in Information Technology</strong> | CGPA: 9.19 / 10 | Grade A+</p>
+        <div class="about-links">
+          <a href="https://github.com/shashank8walke" class="social-link" target="_blank" rel="noopener" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/shashank8walke/" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:shashank8walke@gmail.com" class="social-link" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="assets/files/resume.pdf" class="social-link" download title="Download Resume">
+            <i class="fas fa-file-pdf"></i>
+          </a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div>
-                <h3>Languages</h3>
-                <ul>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>Javascript</li>
-                    <li>C++</li>
-                    <li>R</li>
-                    <li>Shell Scripting</li>
-                    <li>Perl</li>
-                </ul>
+<!-- ════════════════════════════════════════════════════════
+     TECH STACK
+═════════════════════════════════════════════════════════ -->
+<section id="tech-stack" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Tech Stack</span>
+      <h2 class="section-heading section-heading-center">Skills &amp; Technologies</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- GenAI & LLMs -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="dark-card skill-quadrant">
+          <p class="skill-quadrant-title"><i class="fas fa-brain"></i> GenAI &amp; LLMs</p>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">LangChain / LangGraph</span>
+              <span class="skill-pct">90%</span>
             </div>
-            <div>
-                <h3>ML/AI</h3>
-                <ul>
-                    <li>Tensorflow</li>
-                    <li>Pytorch</li>
-                    <li>Scikit-learn</li>
-                    <li>Numpy</li>
-                    <li>Pandas</li>
-                    <li>Matplotlib</li>
-                    <li>OpenCV</li>
-                </ul>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="90"></div>
             </div>
-            <div>
-                <h3>Web Development</h3>
-                <ul>
-                    <li>Angular</li>
-                    <li>React</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>NodeJS</li>
-                </ul>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">OpenAI / Claude APIs</span>
+              <span class="skill-pct">88%</span>
             </div>
-            <div>
-                <h3>Databases</h3>
-                <ul>
-                    <li>SQL</li>
-                    <li>MongoDB</li>
-                </ul>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
             </div>
-            <div>
-                <h3>Cloud/DevOps</h3>
-                <ul>
-                    <li>AWS</li>
-                    <li>Git</li>
-                    <li>Docker</li>
-                    <li>Linux</li>
-                    <li>Microservices</li>
-                    <li>REST APIs</li>
-                    <li>Jenkins</li>
-                </ul>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">RAG &amp; Vector DBs</span>
+              <span class="skill-pct">87%</span>
             </div>
-            <div>
-                <h3>Other</h3>
-                <ul>
-                    <li>OOPs</li>
-                    <li>Tableau</li>
-                    <li>Jupyter</li>
-                </ul>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="87"></div>
             </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Agent Orchestration</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Fine-tuning (LoRA / PEFT)</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
+      <!-- ML & Data -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="dark-card skill-quadrant">
+          <p class="skill-quadrant-title"><i class="fas fa-chart-line"></i> ML &amp; Data</p>
 
-        <div class="experience-item">
-            <h3>Veritas Technologies: Software Engineer - NetBackup Appliance Team (NBA)</h3>
-            <p class="date">April 2023 - July 2024</p>
-            <ul>
-                <li>Led development of "Appliance Cloud Toolkit" using ML algorithms for NBA OS upgrades. Implemented data-driven recommendations, predictive alerts, and one-click management on the System Health Insights platform, resulting in increased customer satisfaction by 25% through advanced analytics.</li>
-                <li>Optimized NBA patch upgrades using shadow partitioning, reducing upgrade time by 40% (180 to 110 mins).</li>
-                <li>Designed a disaster recovery solution for high-availability clusters to retain appliance configurations.</li>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">PyTorch</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">LightGBM / XGBoost</span>
+              <span class="skill-pct">87%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="87"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">TensorFlow / Keras</span>
+              <span class="skill-pct">83%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="83"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Hugging Face</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Scikit-learn / MLflow</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Systems & Backend -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="dark-card skill-quadrant">
+          <p class="skill-quadrant-title"><i class="fas fa-server"></i> Systems &amp; Backend</p>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">C++ / Systems Programming</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Spring Boot / FastAPI</span>
+              <span class="skill-pct">83%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="83"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Distributed Systems</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">gRPC / Kafka</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">CI/CD / Jenkins</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & Web -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="dark-card skill-quadrant">
+          <p class="skill-quadrant-title"><i class="fas fa-cloud"></i> Cloud &amp; Web</p>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">PostgreSQL / MongoDB</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">AWS / Azure</span>
+              <span class="skill-pct">82%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Docker / Kubernetes</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">React / Angular</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Redis / Snowflake</span>
+              <span class="skill-pct">78%</span>
+            </div>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     EXPERIENCE
+═════════════════════════════════════════════════════════ -->
+<section id="experience" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Experience</span>
+      <h2 class="section-heading section-heading-center">Work History</h2>
+    </div>
+
+    <div class="alt-timeline">
+
+      <!-- 1. Research Assistant — LEFT -->
+      <div class="alt-timeline-item left" data-aos="fade-right">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-date">Aug 2025 – Apr 2026</span>
+              <h3 class="timeline-title">Thesis &amp; Research Assistant</h3>
+              <p class="timeline-org">North Carolina State University · Raleigh, NC</p>
+            </div>
+            <div class="company-initials">NC</div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">Algorithms</span>
+            <span class="tag">TF-IDF</span>
+            <span class="tag">Data Structures</span>
+            <span class="tag">Academic Research</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show details</summary>
+            <ul class="timeline-bullets">
+              <li>Designed novel data structures for ranked document retrieval for two pattern queries with TF-IDF scoring, achieving O(n²/³·k¹/³) query time and linear space.</li>
+              <li>Research submitted to European Symposium on Algorithms (ESA) 2026.</li>
             </ul>
+          </details>
         </div>
+      </div>
 
-        <div class="experience-item">
-            <h3>Veritas Technologies: Associate Software Engineer and Intern</h3>
-            <p class="date">July 2021 - March 2023</p>
-            <ul>
-                <li>Developed HAMSA, a Vulnerability Tracking and Management Tool by integrating RedHat APIs, Blackduck, and machine learning, for automated reports, insights and component analysis. Thus, adopted by 20+ internal teams saving 15% time during product pre-planning and release activities.</li>
-                <li>Collaborated with cross-functional teams for the development of 2 simultaneous NBA patches per quarter to deliver an average of 10% new features, 70+ security vulnerability fixes, and core escalations fixes.</li>
-                <li>Integrated security engines from leading Endpoint protection providers, creating an Antimalware feature that empowered users to detect, quarantine, and eliminate threats.</li>
+      <!-- 2. NetApp Intern — RIGHT -->
+      <div class="alt-timeline-item right" data-aos="fade-left">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div class="company-initials" style="background: linear-gradient(135deg, #60a5fa, #34d399);">NA</div>
+            <div>
+              <span class="timeline-date">May 2025 – Aug 2025</span>
+              <h3 class="timeline-title">AI / ML Intern</h3>
+              <p class="timeline-org">NetApp · Raleigh, NC</p>
+            </div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">LightGBM</span>
+            <span class="tag">XGBoost</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">Agentic AI</span>
+            <span class="tag">Abacus AI</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show details</summary>
+            <ul class="timeline-bullets">
+              <li>Built production ML pipeline on 3M+ records for renewals classification &amp; forecasting using Snowflake &amp; SQL Server.</li>
+              <li>Deployed ensemble models (LightGBM, XGBoost) with hyperparameter tuning, improving F1 score by 8%; managed end-to-end model lifecycle on Abacus AI.</li>
+              <li>Finalist (top 3) in Innovation Challenge for designing an Agentic AI strategy using LLM APIs and predictive analytics for customer success automation.</li>
             </ul>
+          </details>
         </div>
-    </section>
+      </div>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-item">
-            <h3>SightBuddy</h3>
-            <p>Won "Best Use of GenAI" award at HackNCState-25 hackathon by MLH. AI-powered web assistant leveraging NLP and Gemini for text summarization, voice-to-text conversion, and intelligent action execution, empowering visually impaired users to navigate and comprehend digital content.</p>
+      <!-- 3. Veritas SWE — LEFT -->
+      <div class="alt-timeline-item left" data-aos="fade-right">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-date">Apr 2023 – Jul 2024</span>
+              <h3 class="timeline-title">Software Engineer</h3>
+              <p class="timeline-org">Veritas Technologies · Pune, India</p>
+            </div>
+            <div class="company-initials" style="background: linear-gradient(135deg, #f472b6, #a78bfa);">VT</div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Anti-malware</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show details</summary>
+            <ul class="timeline-bullets">
+              <li>Built Appliance Cloud Toolkit (Java/Python/C++/Shell) automating NBA OS upgrades — async chunked downloads of 9GB packages, on-appliance health analyzer, real-time telemetry; achieved 70% enterprise customer adoption.</li>
+              <li>Engineered performance optimization via shadow partitioning, reducing OS upgrade time by 40% (180 → 110 mins).</li>
+              <li>Integrated multi-vendor anti-malware engines via CLI; supported 850+ ransomware signatures scanning 500K+ files.</li>
+              <li>Debugged Jenkins pipeline failures and optimized CI jobs for regression testing, reducing runtime by 20%.</li>
+            </ul>
+          </details>
         </div>
-        <div class="project-item">
-            <h3>Multi-label Threat Classifier</h3>
-            <p>Proposed a novel architecture combining autoencoder and random forest, improving accuracy from 75% to 78% by unsupervised feature learning and hyperparameter optimization.</p>
-        </div>
-        <div class="project-item">
-            <h3>WolfLease</h3>
-            <p>A secure subleasing web app featuring user authentication, digital lease signing, and personalized flat recommendations based on user profiles, preferences, and area-specific data analysis.</p>
-        </div>
-         <div class="project-item">
-            <h3>Density based Traffic Management System</h3>
-            <p>using OpenCV and CNN with 92% accuracy.</p>
-        </div>
-    </section>
+      </div>
 
-    <section id="certifications">
-        <h2>Certifications, Achievements, Leadership</h2>
-        <ul>
-            <li>PluralSight: Fundamental Cloud Concepts for AWS, Introduction to Security and Architecture on AWS</li>
-            <li>Veritas [2022-2024]: 2 Star of the Quarter Awards, 5 WoW Awards, Mention in company newsletter for innovation and major contributions in releases. Finalist in a hackathon for an event-based backup strategy.</li>
-            <li>Walchand College of Engineering [2018-2021]: Finalist (ACM hackathon for blockchain-based healthcare inventory management system), Winner (3 coding competitions with (500+) participants), Winner (Reverse coding competition, a state-level event at COEP Pune).</li>
-            <li>Mentor, Head of Public Relations(PR), and Event Lead [2018-2021] - Walchand Linux Users Group to organize and publicize technical events, workshops, and club activities with 2000+ participants.</li>
-        </ul>
-    </section>
+      <!-- 4. Veritas ASE — RIGHT -->
+      <div class="alt-timeline-item right" data-aos="fade-left">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div class="company-initials" style="background: linear-gradient(135deg, #f472b6, #a78bfa);">VT</div>
+            <div>
+              <span class="timeline-date">Jul 2021 – Mar 2023</span>
+              <h3 class="timeline-title">Associate Software Engineer</h3>
+              <p class="timeline-org">Veritas Technologies · Pune, India</p>
+            </div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Shell</span>
+            <span class="tag">Security</span>
+            <span class="tag">GDB</span>
+            <span class="tag">RPM Packaging</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show details</summary>
+            <ul class="timeline-bullets">
+              <li>Contributed to 2 parallel storage OS releases per quarter delivering 70+ security fixes (BlackDuck, OpenSCAP, Qualys CVEs); built RPM packaging using Make/Java/Shell/Perl for 9GB packages across 25+ releases.</li>
+              <li>Resolved P1 production issues and core dumps via sosreport/GDB; built unit test automation achieving 95% coverage.</li>
+              <li>Designed a disaster recovery solution for 20+ high-availability clusters with 99.9% configuration retention.</li>
+            </ul>
+          </details>
+        </div>
+      </div>
 
-    <footer>
-        <p>&copy; 2025 Shashank Ajit Walke</p>
-    </footer>
+    </div>
+  </div>
+</section>
 
-    <script src="https://kit.fontawesome.com/yourfontawesomecode.js" crossorigin="anonymous"></script>
+<!-- ════════════════════════════════════════════════════════
+     EDUCATION
+═════════════════════════════════════════════════════════ -->
+<section id="education" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Education</span>
+      <h2 class="section-heading section-heading-center">Academic Background</h2>
+    </div>
+
+    <div class="alt-timeline">
+
+      <!-- NCSU — LEFT -->
+      <div class="alt-timeline-item left" data-aos="fade-right">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div>
+              <span class="timeline-date">Aug 2024 – May 2026</span>
+              <h3 class="timeline-title">M.S. Computer Science</h3>
+              <p class="timeline-org">North Carolina State University · Raleigh, NC</p>
+            </div>
+            <div class="company-initials" style="background: linear-gradient(135deg, #cc0000, #a78bfa);">NC</div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">GPA 4.0 / 4.0</span>
+            <span class="tag">Thesis Track</span>
+            <span class="tag">Tau Beta Pi</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show courses</summary>
+            <ul class="timeline-bullets">
+              <li>Neural Networks &amp; Deep Learning</li>
+              <li>Automated Learning &amp; Data Analysis</li>
+              <li>Database Management Systems</li>
+              <li>Design &amp; Analysis of Algorithms</li>
+              <li>Artificial Intelligence</li>
+              <li>Data Visualization</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+      <!-- WCE — RIGHT -->
+      <div class="alt-timeline-item right" data-aos="fade-left">
+        <div class="dark-card alt-timeline-content">
+          <div class="timeline-header">
+            <div class="company-initials" style="background: linear-gradient(135deg, #60a5fa, #34d399);">WC</div>
+            <div>
+              <span class="timeline-date">Jul 2017 – May 2021</span>
+              <h3 class="timeline-title">B.Tech Information Technology</h3>
+              <p class="timeline-org">Walchand College of Engineering · Sangli, India</p>
+            </div>
+          </div>
+          <div class="timeline-tags">
+            <span class="tag">CGPA 9.19 / 10</span>
+            <span class="tag">Grade A+</span>
+          </div>
+          <details>
+            <summary class="timeline-expand-hint">▸ Show courses</summary>
+            <ul class="timeline-bullets">
+              <li>Software Engineering</li>
+              <li>Operating Systems</li>
+              <li>Computer Networks</li>
+              <li>Neural Networks</li>
+              <li>Deep Learning Beyond Accuracy</li>
+              <li>Algorithms &amp; Data Structures</li>
+            </ul>
+          </details>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     PROJECTS
+═════════════════════════════════════════════════════════ -->
+<section id="projects" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Projects</span>
+      <h2 class="section-heading section-heading-center">What I've Built</h2>
+      <p class="text-center" style="color: var(--color-text-muted); font-size: 0.9rem; margin-top: 0.5rem;">
+        GitHub links coming soon. <a href="mailto:shashank8walke@gmail.com" style="color: var(--color-primary);">Email me</a> for code walkthroughs.
+      </p>
+    </div>
+
+    <!-- ── Category: GenAI & AI ── -->
+    <div class="projects-category-label" data-aos="fade-up">
+      <i class="fas fa-brain" style="color: var(--color-primary);"></i>
+      GenAI &amp; AI Projects
+      <span>4 projects</span>
+    </div>
+
+    <div class="row g-4 mb-5">
+
+      <!-- UNewz -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#f472b6; --icon-r:244; --icon-g:114; --icon-b:182;">
+            <i class="fas fa-newspaper"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Twelve Labs</span>
+            <span class="tag">Gemini Pro</span>
+          </div>
+          <h3 class="proj-title">UNewz — Deepfake &amp; Clickbait Detection</h3>
+          <p class="proj-desc">
+            Browser extension with Flask backend orchestrating multimodal LLM inference (Twelve Labs Pegasus
+            for video, Gemini Pro for text/claim analysis); surfaces inline credibility scores on YouTube
+            in real-time within ~3s. Winner of <strong style="color:var(--color-accent);">"Best Use of .Tech Domain"</strong>
+            at HackNCState-26 (MLH) among 100+ teams.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- SightBuddy -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="60">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#60a5fa; --icon-r:96; --icon-g:165; --icon-b:250;">
+            <i class="fas fa-eye"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">LangChain</span>
+            <span class="tag">OpenAI API</span>
+            <span class="tag">Voice-to-Text</span>
+            <span class="tag">Accessibility</span>
+          </div>
+          <h3 class="proj-title">SightBuddy — AI Web Browser Extension</h3>
+          <p class="proj-desc">
+            Accessibility-first AI assistant leveraging LangChain agent orchestration and OpenAI APIs for
+            real-time web summarization and voice-to-text navigation — empowering visually impaired users.
+            Winner of <strong style="color:var(--color-accent);">"Best Use of GenAI"</strong> at HackNCState-25 (MLH).
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- RAG Q&A -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="120">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#a78bfa; --icon-r:167; --icon-g:139; --icon-b:250;">
+            <i class="fas fa-comments"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">MCP</span>
+            <span class="tag">Claude Code</span>
+          </div>
+          <h3 class="proj-title">Technical Q&amp;A System with RAG</h3>
+          <p class="proj-desc">
+            Production-grade RAG pipeline with semantic chunking, vector embeddings (Pinecone), and hybrid
+            retrieval achieving 87% answer accuracy via prompt engineering and reranking. Extended with
+            Claude Code and MCP server integration for agentic document interaction.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- LLM Quantization -->
+      <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="180">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#34d399; --icon-r:52; --icon-g:211; --icon-b:153;">
+            <i class="fas fa-microchip"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">ONNX Runtime</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">PTQ / INT8</span>
+          </div>
+          <h3 class="proj-title">LLM Quantization &amp; Inference Benchmark</h3>
+          <p class="proj-desc">
+            Applied PTQ and INT8 quantization to TinyLlama; exported to ONNX with full graph optimizations;
+            benchmarked across FP32, INT8, and ONNX variants — achieving <strong style="color:var(--color-secondary);">3.8× latency reduction</strong>
+            and <strong style="color:var(--color-secondary);">4× model size reduction</strong>.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ── Category: Systems & Engineering ── -->
+    <div class="projects-category-label" data-aos="fade-up">
+      <i class="fas fa-server" style="color: var(--color-secondary);"></i>
+      Systems &amp; Engineering Projects
+      <span>5 projects</span>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Distributed Cache -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#fb923c; --icon-r:251; --icon-g:146; --icon-b:60;">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Redis</span>
+            <span class="tag">Pub-Sub</span>
+            <span class="tag">Vector Clocks</span>
+          </div>
+          <h3 class="proj-title">Distributed Cache Invalidation System</h3>
+          <p class="proj-desc">
+            Cache consistency protocol with pub-sub achieving &lt;10ms invalidation latency across 5+ nodes;
+            implemented vector-clock conflict resolution for eventual consistency.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Distributed Storage -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#60a5fa; --icon-r:96; --icon-g:165; --icon-b:250;">
+            <i class="fas fa-hdd"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">C++</span>
+            <span class="tag">gRPC</span>
+            <span class="tag">Raft</span>
+            <span class="tag">Consistent Hashing</span>
+          </div>
+          <h3 class="proj-title">Distributed Storage Metadata Service</h3>
+          <p class="proj-desc">
+            Metadata service for a distributed file system using consistent hashing, replication factor 3,
+            and Raft-based leader election sustaining failover within ~1s under node crashes.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- WolfLease -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#facc15; --icon-r:250; --icon-g:204; --icon-b:21;">
+            <i class="fas fa-house"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">OAuth</span>
+          </div>
+          <h3 class="proj-title">WolfLease — Subleasing Web Platform</h3>
+          <p class="proj-desc">
+            Scalable subleasing platform with OAuth authentication, e-signature integration, and a personalized
+            recommendation engine; RESTful API supporting multi-user workflows and digital lease management.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- OS Components -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#f472b6; --icon-r:244; --icon-g:114; --icon-b:182;">
+            <i class="fas fa-memory"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Memory Mgmt</span>
+            <span class="tag">CPU Scheduling</span>
+            <span class="tag">POSIX</span>
+          </div>
+          <h3 class="proj-title">OS-Level System Components</h3>
+          <p class="proj-desc">
+            Implemented Reader/Writer locks and demand paging for optimized virtual memory; designed
+            epoch-based CPU scheduler with priority-based quantum allocation for fair resource distribution.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Event Driven Monitor -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+        <div class="dark-card proj-card">
+          <div class="proj-icon-circle" style="--icon-color:#34d399; --icon-r:52; --icon-g:211; --icon-b:153;">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="proj-tags">
+            <span class="tag">C++</span>
+            <span class="tag">inotify</span>
+            <span class="tag">Multi-threading</span>
+            <span class="tag">Mutex</span>
+          </div>
+          <h3 class="proj-title">Event-Driven Storage Monitor</h3>
+          <p class="proj-desc">
+            Multi-threaded file system monitor using inotify/watchdog, concurrent I/O, metadata indexing,
+            and POSIX APIs with mutex-based synchronization for auto-backup — processing 1K+ file events/sec.
+          </p>
+          <span class="proj-link private"><i class="fas fa-lock me-1"></i> Private — Coming Soon</span>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     AWARDS
+═════════════════════════════════════════════════════════ -->
+<section id="awards" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Awards</span>
+      <h2 class="section-heading section-heading-center">Achievements &amp; Recognition</h2>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- MLH 2026 -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="dark-card award-card">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <span class="award-badge">HackNCState-26 · MLH</span>
+          <h4>"Best Use of .Tech Domain"</h4>
+          <p>Won among 100+ teams at MLH's HackNCState-26 for UNewz — a multimodal deepfake &amp; clickbait detection browser extension with real-time YouTube credibility scoring.</p>
+        </div>
+      </div>
+
+      <!-- MLH 2025 -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+        <div class="dark-card award-card">
+          <div class="award-icon"><i class="fas fa-trophy"></i></div>
+          <span class="award-badge">HackNCState-25 · MLH</span>
+          <h4>"Best Use of GenAI"</h4>
+          <p>Back-to-back MLH hackathon win for SightBuddy — an AI-powered accessibility browser extension using LangChain and OpenAI to empower visually impaired users.</p>
+        </div>
+      </div>
+
+      <!-- Tau Beta Pi -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+        <div class="dark-card award-card">
+          <div class="award-icon"><i class="fas fa-graduation-cap"></i></div>
+          <span class="award-badge">Honor Society · NCSU</span>
+          <h4>Tau Beta Pi</h4>
+          <p>Inducted into Tau Beta Pi, the nation's oldest engineering honor society, recognizing the top ~12.5% of engineering students for academic excellence and character.</p>
+        </div>
+      </div>
+
+      <!-- Veritas -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="60">
+        <div class="dark-card award-card">
+          <div class="award-icon"><i class="fas fa-star"></i></div>
+          <span class="award-badge">Veritas Technologies</span>
+          <h4>Star of the Quarter &amp; WoW Awards</h4>
+          <p>2 Star of the Quarter awards and 5 WoW (Way of Working) awards at Veritas Technologies; featured in the company newsletter for innovation and major release delivery.</p>
+        </div>
+      </div>
+
+      <!-- ESA Research -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="120">
+        <div class="dark-card award-card">
+          <div class="award-icon"><i class="fas fa-file-lines"></i></div>
+          <span class="award-badge">Research · ESA 2026</span>
+          <h4>Research Submitted to ESA 2026</h4>
+          <p>Novel data structures for ranked document retrieval with O(n²/³·k¹/³) query time and linear space complexity — submitted to the European Symposium on Algorithms 2026.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     CONTACT
+═════════════════════════════════════════════════════════ -->
+<section id="contact" class="section-padding">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-heading section-heading-center">Let's Build Something</h2>
+      <p style="color: var(--color-text-muted); font-size: 0.95rem; max-width: 480px; margin: 0 auto;">
+        Open to full-time roles in AI/ML engineering, software engineering, and research. Also happy to talk about interesting problems.
+      </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Connect Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="dark-card connect-panel">
+          <h3>Connect</h3>
+          <p>Based in Raleigh, NC — open to remote, hybrid, and relocation opportunities nationwide.</p>
+
+          <div class="connect-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:shashank8walke@gmail.com">shashank8walke@gmail.com</a>
+          </div>
+          <div class="connect-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/shashank8walke" target="_blank" rel="noopener">github.com/shashank8walke</a>
+          </div>
+          <div class="connect-item">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/shashank8walke/" target="_blank" rel="noopener">linkedin.com/in/shashank8walke</a>
+          </div>
+          <div class="connect-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <a>Raleigh, NC · USA</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Send Message -->
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="dark-card connect-panel d-flex flex-column align-items-center justify-content-center text-center">
+          <div class="hero-badge mb-4" style="width:64px;height:64px;font-size:1.5rem;">
+            <i class="fas fa-paper-plane"></i>
+          </div>
+          <h3 style="-webkit-text-fill-color: unset; background: none; color: var(--color-text); font-size: 1.25rem; margin-bottom: 0.75rem;">
+            Send a Message
+          </h3>
+          <p style="color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.7; margin-bottom: 1.75rem;">
+            Have a role, project, or idea in mind? I'd love to connect — reach out directly through the form below.
+          </p>
+          <a href="https://fs8.formsite.com/XtsIfO/vdedmfdzgu/index"
+             class="btn btn-primary px-5 py-3"
+             target="_blank" rel="noopener">
+            <i class="fas fa-paper-plane me-2"></i>Open Contact Form
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════════════════════════════════════════════
+     FOOTER
+═════════════════════════════════════════════════════════ */
+<footer class="site-footer text-center">
+  <div class="container">
+    <p>Built with HTML · CSS · JS · Hosted on GitHub Pages</p>
+    <p>© 2026 Shashank Ajit Walke · <a href="mailto:shashank8walke@gmail.com">shashank8walke@gmail.com</a></p>
+  </div>
+</footer>
+
+<!-- ── Scripts ─────────────────────────────────────────────── -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS('particles-js', {
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: '#a78bfa' },
+    shape: { type: 'circle' },
+    opacity: { value: 0.45, random: true, anim: { enable: true, speed: 0.8, opacity_min: 0.1, sync: false } },
+    size: { value: 2.5, random: true },
+    line_linked: { enable: true, distance: 140, color: '#60a5fa', opacity: 0.22, width: 1 },
+    move: { enable: true, speed: 1.2, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
+  },
+  interactivity: {
+    detect_on: 'canvas',
+    events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: false }, resize: true },
+    modes: { grab: { distance: 160, line_linked: { opacity: 0.5 } } }
+  },
+  retina_detect: true
+});
+</script>
+
+<script src="assets/js/main.js"></script>
+
+<!-- GoatCounter analytics -->
+<script data-goatcounter="https://shashank.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
 </body>
 </html>
